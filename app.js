@@ -27,7 +27,7 @@ range.addEventListener("input", () => {
   length.textContent = cantidad;
 });
 
-checkupp.addEventListener("load", () => {
+checkupp.addEventListener("click", () => {
   if (checkupp.checked) {
     mayusculas = [
       "A",
