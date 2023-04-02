@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <script src="https://kit.fontawesome.com/d5cc788dce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <p class="title">PASSWORD GENERATOR</p>
+        <div class="container-top">
+            <span class="password">P4$5W0rD!</span>
+            <i class="fa-sharp fa-solid fa-copy copy"></i>
+        </div>
+        <div class="container-botton">
+            <div class="container-length">
+                <p>Character Length</p>
+                <span class="length">0</span>
+            </div>
+            <div class="conditions">
+                <input type="range" min="0" max="20" class="range" value="0">
+                <div class="check">
+                    <input type="checkbox" class="mycheckbox upp">
+                    <p>Include Uppercase Letters</p>
+                </div>
+                <div class="check">
+                    <input type="checkbox" class="mycheckbox low" >
+                    <p>Include Lowercase Letters</p>
+                </div>
+                <div class="check">
+                    <input type="checkbox" class="mycheckbox num" >
+                    <p>Include Numbers</p>
+                </div>
+                <div class="check">
+                    <input type="checkbox" class="mycheckbox syn">
+                    <p>Include Synbols</p>
+                </div>
+            </div>
+            
+            <p class="error1">Error:Please select any check</p>   
+
+            <button class="generate">GENERATE <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+    
+
+
+
+<script src="./app.js"></script>
+<script src="https://kit.fontawesome.com/d5cc788dce.js" crossorigin="anonymous"></script>
+</body>
+</html>

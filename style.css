@@ -1,0 +1,241 @@
+:root {
+  --verde: #a4ffaf;
+  --fondo: #0e0d12;
+  --container: #24232c;
+  --title: #747c98;
+  --strength: #18171f;
+  --pass: #4b4952;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
+  color: white;
+}
+
+img {
+  width: 1rem;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--fondo);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.title {
+  color: var(--title);
+  font-size: large;
+  margin-bottom: 0.5rem;
+}
+
+.container-top {
+  display: flex;
+  background-color: var(--container);
+  width: 25rem;
+  justify-content: space-between;
+  padding: 1.3rem;
+  font-size: larger;
+  
+}
+
+.password {
+  color: var(--pass);
+  font-weight: bold;
+}
+
+.pass-active{
+  color: white;
+}
+
+.container-botton {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  padding: 1.3rem;
+  background-color: var(--container);
+  gap: 1rem;
+}
+
+.container-length {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-length p {
+  font-size: 18px;
+}
+
+.length {
+  color: var(--verde);
+  font-size: x-large;
+}
+
+.conditions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  font-weight: bold;
+}
+
+.range {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.check {
+  display: flex;
+  gap: 1rem;
+}
+
+.mycheckbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 2px solid #a4ffaf;
+  background-color: white;
+  height: 16px;
+  width: 16px;
+  margin: 0;
+}
+
+.mycheckbox:checked {
+  background-color: #a4ffaf;
+  border-color: #a4ffaf;
+  color: #0e0d12;
+}
+.mycheckbox:checked::before {
+  content: "\2714";
+  font-size: 14px;
+  text-align: center;
+  line-height: 16px;
+  color: black;
+  font-weight: bold;
+}
+
+.strength {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--strength);
+  height: 3rem;
+  align-items: center;
+  padding: 2rem;
+}
+
+.strength p{
+  font-weight: 600;
+  color: var(--pass);
+}
+
+.dif-box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.boxes {
+  display: flex;
+  gap: 5px;
+}
+
+.box {
+  border: 2px solid rgb(202, 201, 201);
+  width: 10px;
+  height: 1.8rem;
+}
+
+/* .range {
+  -webkit-appearance: none;
+  height: 8px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #a4ffaf;
+} */
+
+.generate {
+  background-color: var(--verde);
+  /* height: 4rem; */
+  margin-top: 0.5rem;
+  color: #0e0d12;
+  font-weight: bold;
+  width: 100%;
+  padding: 1rem 0;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.generate i {
+  color: rgb(2, 2, 2);
+}
+
+.generate:hover {
+  background-color: transparent;
+  color: var(--verde);
+  outline: 2px solid var(--verde);
+}
+
+.generate:hover i {
+  color: var(--verde);
+}
+
+i {
+  color: var(--verde);
+  cursor: pointer;
+}
+
+.error1{
+  display: none;
+}
+
+.error2{
+  display: none;
+}
+
+.error-active{
+  display: block;
+  color: red;
+  text-align: center;
+}
+.dificult{
+  font-weight: bold;
+}
+
+
+
+.box1-active{
+  background-color: rgb(233, 132, 92);
+  border: transparent;
+}
+
+
+
+.box2-active{
+  background-color: rgb(252, 67, 67);
+  border: transparent;
+}
+
+
+.box3-active{
+  background-color: rgb(164, 164, 42);
+  border: transparent;
+}
+
+
+
+.box4-active{
+  background-color: #a4ffaf;
+  border: transparent;
+}
